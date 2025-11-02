@@ -1,0 +1,5 @@
+This container runs a simple Flask web application. 
+The Dockerfile defines how the app is packaged with Python and Flask installed. 
+Once built, the image is pushed to Amazon ECR and deployed on ECS using Fargate. 
+The load balancer distributes incoming traffic to the running container. 
+Finally, users can access the app through the public DNS URL provided by the load balancer.
